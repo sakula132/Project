@@ -8,31 +8,139 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../dasboard/css/style.css" />
-    <title>AdminSite</title>
+    <link rel="stylesheet" href="../dasboard/css/style.css"/>
+    <title>Soi 2 Car Park Songkhla</title>
   </head>
 
   <body>
     <!-- SIDEBAR -->
     <section id="sidebar">
-        <a href="#" class="brand"><i class="bx bxs-smaile icon"></i> AdminSite</a>
+        <a href="#" class="brand"></i>Car Park Songkhla</a>
         <ul class="side-menu">
-            <li><a href="#"><i class="bx bxs-dashboard icon"></i> Dashboard</a></li>
-            <li class="divider">Main</li>
+            <li><a href="#" class="active"><i class="bx bxs-dashboard icon"></i> Dashboad</a></li>
+            <li class="divider" data-text="main">Main</li>
             <li>
-                <a href="#"><i class="bx bxs-inbox icon"></i> Elements
-                    <i class="bx bx-chevron-right-icon-right"></i></a>
+                <a href="#"><i class="bx bxs-inbox icon"></i> ข้อมูล
+                  <i class='bx bx-chevron-right icon-right'></i></a>
                     <ul class="side-dropdown">
-                        <li><a href="#">Alert</a></li>
-                        <li><a href="#">Badges</a></li>
-                        <li><a href="#">Breadcrumbs</a></li>
-                        <li><a href="#">botton</a></li>
+                        <li><a href="#">แอดมิน</a></li>
+                        <li><a href="#">พนักงาน</a></li>
+                        <li><a href="../dasboard/aboutus/empus.php">ลูกค้า</a></li>
             </ul>
         </li>
-        <li><a href="#"><i class='bx bxs-chart'></i> Chart</a></li>
-        <li><a href="#"><i class='bx bxs-edit'></i> Edit</a></li>
-        <li class="divider">Table and froms</li>
+        <li><a href="#"><i class='bx bxs-chart icon'></i> Chart</a></li>
+        <li><a href="#"><i class='bx bxs-edit icon'></i> Edit</a></li>
+        <li class="divider" data-text="table and froms">Table and froms</li>
+        <li><a href="#"><i class='bx bx-table icon'></i></i> Tables</a></li>
+        <li>
+          <a href="#"><i class='bx bxs-notepad icon'></i> Froms
+            <i class='bx bx-chevron-right icon-right'></i></a> 
+              <ul class="side-dropdown">
+                  <li><a href="#">Alert</a></li>
+                  <li><a href="#">Badges</a></li>
+                  <li><a href="#">Breadcrumbs</a></li>
+                  <li><a href="#">Radio</a></li>
+              </ul>
+        </li>
       </ul>
+      <!-- <div class="ads">
+        <div class="wrapper">
+          <a href="#" class="btn-upgrade">Upgrade</a>
+          <p>Become a <span>PRO</span>member and enjoy <span>All Features</span></p>
+        </div>
+      </div> -->
     </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class='bx bx-menu toggle-sidebar'></i>
+        <form action="#">
+          <div class="form-group">
+            <input type="text" placeholder="Search...">
+            <i class='bx bx-search icon' ></i>
+          </div>
+        </form>
+        <!-- <a href="#" class="nav-link">
+          <i class='bx bxs-bell icon'></i>
+          <span class="badge">5</span>
+        </a>
+        <a href="#" class="nav-link">
+          <i class='bx bxs-message-rounded-detail icon'></i>
+          <span class="badge">8</span>
+        </a> -->
+        <span class="divider"></span>
+        <div class="profile">
+          <img src="../dasboard/img/fawsee.jpg" alt="">
+          <ul class="profile-link">
+            <li><a href="#"><i class='bx bx-user-circle icon' ></i>Profile</a></li>
+            <li><a href="#"><i class='bx bxs-cog' ></i></i>Settings</a></li>
+            <li><a href="../li/logout.php"><i class='bx bx-log-out' ></i></i>Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- NAVBAR -->
+      <!-- MAIN -->
+      <main>
+        <h1 class="title">Dashboard</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li class="divider">/</li>
+          <li><a href="#" class="active">Dashboard</a></li>
+        </ul>
+        <div class="info-data">
+          <div class="card">
+            <div class="head">
+              <div>
+                <h2>2</h2>
+                <p>พนักงาน</p>
+              </div>
+              <i class='bx bxs-user icon'></i>
+            </div>
+            <span class="progress" data-value="100%"></span>
+            <span class="label">Full</span>
+          </div>
+          <div class="card">
+            <div class="head">
+              <div>
+                <h2>14</h2>
+                <p>สมาชิก</p>
+              </div>
+              <i class='bx bxs-user-rectangle icon down'></i>
+            </div>
+            <span class="progress" data-value="70%"></span>
+            <span class="label">70%</span>
+          </div>
+          <div class="card">
+            <div class="head">
+              <div>
+                <h2>30</h2>
+                <p>พื้นที่จอดรถว่าง</p>
+              </div>
+              <i class='bx bx-car icon free'></i>
+            </div>
+            <span class="progress" data-value="75%"></span>
+            <span class="label">75%</span>
+          </div>
+          <div class="card">
+            <div class="head">
+              <div>
+                <h2>10</h2>
+                <p>พื้นที่รถจอด</p>
+              </div>
+              <i class='bx bxs-car-garage icon garage'></i>
+              </div>
+              <span class="progress" data-value="25%"></span>
+              <span class="label">25%</span>
+          </div>
+
+      </main>
+      <!-- MAIN -->
+    </section>
+    <!-- NAVBAR -->
+
+    <script src="../dasboard/js/script.js"></script>
   </body>
 </html>
