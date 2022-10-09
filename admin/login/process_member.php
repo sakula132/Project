@@ -18,7 +18,7 @@ if (!empty($_POST)) {
       // $_SESSION["login_name"] = $rows["name"]; // เก็บค่าในรูปแบบของ session
       $_SESSION["login_surname"] = $rows["mem_lname"]; // เก็บค่าในรูปแบบของ session
 
-         header("Location: ../members/index.php");
+         header("Location: ../dasboard/member/index.php");
      
    }
 }

@@ -16,7 +16,7 @@ if ($action == "CREATE") {
    $result = $stmt->execute();
    if ($result) {
       echo "<script>alert(`บันทึกข้อมูลได้สำเร็จ`)</script>";
-      header("Location: /carparking/login/");
+      header("Location: ../login/indix.php");
    } else {
       echo "<script>alert(`เกิดข้อผิดพลาดระหว่างบันทึกข้อมูล`)</script>";
    }

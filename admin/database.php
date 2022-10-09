@@ -6,7 +6,7 @@ session_start(); //เรื่มต้น session
 $db_host = "localhost";
 $db_user = "root"; //ชื่อuser
 $db_pass = ""; //ชื่อรหัสผ่าน
-$db_name = "project"; //ชื่อฐานข้อมูล
+$db_name = "carparking"; //ชื่อฐานข้อมูล
 
 try {
    $db_con = new PDO("mysql:host={$db_host};dbname={$db_name}", $db_user, $db_pass);
