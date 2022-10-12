@@ -3,6 +3,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 </section>
     <!-- NAVBAR -->
 

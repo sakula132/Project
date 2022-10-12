@@ -19,9 +19,9 @@ if (!empty($_POST)) {
       $_SESSION["login_surname"] = $rows["employee_lname"]; // เก็บค่าในรูปแบบของ session
 
       if ($rows['type'] == 1) {
-         header("Location: ../dasboard/member/index.php");
+         header("Location: ../dasboard/employee/index.php");
       } elseif ($rows['type'] == 2) {
-         header("Location: ../dasboard/member/index.php");
+         header("Location: ../dasboard/employee/index.php");
       }
    }
 }

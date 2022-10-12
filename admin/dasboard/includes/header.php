@@ -9,26 +9,28 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Soi 2 Car Park Songkhla</title>
   </head>
 
   <body>
+
     <!-- SIDEBAR -->
     <section id="sidebar">
-        <a href="../index.html" class="brand"></i>Car Park Songkhla</a>
+        <a href="../employee/home.php" class="brand"></i>Car Park Songkhla</a>
         <ul class="side-menu">
-            <li><a href="#" class="active"><i class="bx bxs-dashboard icon"></i> Dashboard</a></li>
+            <li><a href="../employee/index.php" class="active"><i class="bx bxs-dashboard icon"></i> Dashboard</a></li>
             <li class="divider" data-text="main">Main</li>
             <li>
                 <a href="#"><i class="bx bxs-inbox icon"></i> ข้อมูล
                   <i class='bx bx-chevron-right icon-right'></i></a>
                     <ul class="side-dropdown">
-                        <li><a href="#">แอดมิน</a></li>
                         <li><a href="#">พนักงาน</a></li>
                         <li><a href="#">ลูกค้า</a></li>
             </ul>
         </li>
-        <li><a href="#"><i class='bx bxs-chart icon'></i> Chart</a></li>
+        <li><a href="../employee/category.php"><i class='bx bxs-category icon'></i> Category</a></li>
         <li><a href="#"><i class='bx bxs-edit icon'></i> Edit</a></li>
         <li class="divider" data-text="table and froms">Table and froms</li>
         <li><a href="#"><i class='bx bx-table icon'></i></i> Tables</a></li>

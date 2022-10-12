@@ -4,11 +4,14 @@ include('../includes/navbar.php');
 
 
 ?>
+
+<link rel="stylesheet" href="../css/main.css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <!-- MAIN -->
     <main>
         <h1 class="title">Dashboard</h1>
         <ul class="breadcrumbs">
-          <li><a href="#">Home</a></li>
+          <li><a href="home.php">Home</a></li>
           <li class="divider">/</li>
           <li><a href="#" class="active">Dashboard</a></li>
         </ul>
