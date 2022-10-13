@@ -27,7 +27,7 @@
                   <i class='bx bx-chevron-right icon-right'></i></a>
                     <ul class="side-dropdown">
                         <li><a href="#">พนักงาน</a></li>
-                        <li><a href="#">ลูกค้า</a></li>
+                        <li><a href="../member/as.php">ลูกค้า</a></li>
             </ul>
         </li>
         <li><a href="../employee/category.php"><i class='bx bxs-category icon'></i> หมวดหมู่รถ</a></li>
