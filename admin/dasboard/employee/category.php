@@ -76,7 +76,7 @@ padding: 10px 10px 10px 10px;
                             <h2 class="h6 text-muted"><i class="fas fa-tasks"></i> &nbsp;จัดการหมวดหมู่</h2>
                             <table class="table mt-4 table-borderless">
                                 <tr>
-                                    <th><b>#</b></th>
+                                    <th><b>ลำดับ</b></th>
                                     <th><b>หมายเลขพื้นที่</b></th>
                                     <th><b>ประเภทยานพาหนะ</b></th>
                                     <th><b>จำกัดยานพาหนะ</b></th>
@@ -86,10 +86,10 @@ padding: 10px 10px 10px 10px;
                                 </tr>
                                                                 <tr>
                                     <td>1</td>
-                                    <td>2</td>
+                                    <td>7</td>
                                     <td>Car</td>
-                                    <td>18</td>
-                                    <td>4</td>
+                                    <td>80</td>
+                                    <td>100</td>
                                     <td>                                        <span class="badge badge-success">เปิดใช้งานแล้ว</span>
                                         
                                         

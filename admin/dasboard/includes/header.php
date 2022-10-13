@@ -30,8 +30,8 @@
                         <li><a href="#">ลูกค้า</a></li>
             </ul>
         </li>
-        <li><a href="../employee/category.php"><i class='bx bxs-category icon'></i> Category</a></li>
-        <li><a href="#"><i class='bx bxs-edit icon'></i> Edit</a></li>
+        <li><a href="../employee/category.php"><i class='bx bxs-category icon'></i> หมวดหมู่รถ</a></li>
+        <li><a href="../employee/add_vehicle.php"><i class='bx bxs-car icon'></i> ที่จอดรถ</a></li>
         <li class="divider" data-text="table and froms">Table and froms</li>
         <li><a href="#"><i class='bx bx-table icon'></i></i> Tables</a></li>
         <li>
