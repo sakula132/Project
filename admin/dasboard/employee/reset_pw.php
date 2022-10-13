@@ -6,12 +6,12 @@ include('../includes/navbar.php');
 ?>
 
 <style>
-.card{    
-max-width: 500px;
+/* .card{    
+max-width: 700px;
 padding: 10px 10px 10px 10px;
-transform: translateX(-5%);
+transform: translateX(-15%);
 transition: all .3s ease;
-}
+} */
 
 
 </style>
@@ -25,19 +25,19 @@ transition: all .3s ease;
                 <div class="col-12 ml-5">
                     <div class="card border-0 shadow-sm">
                         <div class="card-body">
-                            <h2 class="h6 text-muted"><i class="fas fa-cog"></i> &nbsp;Change Your Password</h2>
+                            <h2 class="h6 text-muted"><i class="fas fa-cog"></i> &nbsp;เปลี่ยนรหัสผ่าน</h2>
                             <form action="#" method="post" class="mt-4">
                                 <div class="form-group">
                                     <label class=" m-0 p-0 text-muted">Current Password</label>
-                                    <input type="password" name="current_password" class="form-control form-control-sm shadow-none" placeholder="รหัสผ่านเดิม" autofocus>
+                                    <input type="password" name="current_password" class="form-control form-control-sm shadow-none" placeholder="***รหัสผ่านเดิม***" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <label class=" m-0 p-0 text-muted">New Password</label>
-                                    <input type="password" name="new_password" class="form-control form-control-sm shadow-none" placeholder="รหัสผ่านใหม่" >
+                                    <input type="password" name="new_password" class="form-control form-control-sm shadow-none" placeholder="***รหัสผ่านใหม่***" >
                                 </div>
                                 <div class="form-group">
                                     <label class=" m-0 p-0 text-muted">Re enter Password</label>
-                                    <input type="password" name="reenter_password" class="form-control form-control-sm shadow-none" placeholder="ยืนยันรหัสผ่านใหม่อีกครั้ง">
+                                    <input type="password" name="reenter_password" class="form-control form-control-sm shadow-none" placeholder="***ยืนยันรหัสผ่านใหม่อีกครั้ง***">
                                 </div>
                                 <div class="form-group">
                                     <input type="submit" name="send" class="btn btn-block bg-success text-white shadow-none mt-4" value="Change Password">

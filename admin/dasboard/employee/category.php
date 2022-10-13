@@ -4,10 +4,23 @@ include('../includes/navbar.php');
 
 ?>
     <link rel="stylesheet" href="../css/main.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 
+    <style>
+/* .card{    
+max-width: 100px;
+padding: 10px 10px 10px 10px;
+transform: translateX(-15%);
+transition: all .3s ease;
+} */
+.card{    
+padding: 10px 10px 10px 10px;
+}
 
+
+</style>
 <div class="col-8 offset-3 mt-5 mr-5">
             <div class="row">
                 <div class="col-8 ml-5">
@@ -54,21 +67,6 @@ include('../includes/navbar.php');
                                     รถยนต์                                    <p class="float-right"><i class="fas fa-dollar-sign"></i>&nbsp; 100</p>
                                 </div>
                             </div>
-                                                        <div class="mt-4">
-                                <div class="media-body">
-                                    มอเตอร์ไซต์                                    <p class="float-right"><i class="fas fa-dollar-sign"></i>&nbsp; 50</p>
-                                </div>
-                            </div>
-                                                        <div class="mt-4">
-                                <div class="media-body">
-                                    Mini Van                                    <p class="float-right"><i class="fas fa-dollar-sign"></i>&nbsp; 5</p>
-                                </div>
-                            </div>
-                                                        <div class="mt-4">
-                                <div class="media-body">
-                                    Pickup Van                                    <p class="float-right"><i class="fas fa-dollar-sign"></i>&nbsp; 5</p>
-                                </div>
-                            </div>
                                                     </div>
                     </div>
                 </div>
@@ -101,7 +99,7 @@ include('../includes/navbar.php');
                                            <div class="modal-dialog">
                                                <div class="modal-content">
                                                    <div class="modal-body">
-                                                       <i class="far fa-frown"></i>&nbsp; Do you really want to delete this category?
+                                                       <i class="bx bx-error"></i>&nbsp; ต้องการลบหมวดหมู่นี้?
                                                    </div>
                                                    <div class="modal-footer">
                                                        <a href="http://localhost/SimpleParkingMgSystem_CI/admin/delete/category/1" class="btn btn-sm btn-danger shadow-none">&nbsp; Yes &nbsp;</a>
@@ -111,105 +109,12 @@ include('../includes/navbar.php');
                                            </div>
                                        </div>
                                        
-                                                                              <a href="#" class="btn btn-sm bg-danger text-white shadow-none"><small>Deactivate</small></a>
+                                                                              <a href="#" class="btn btn-sm bg-danger text-white shadow-none"><small>ปิดการใช้งาน</small></a>
                                                                               <button type="button" data-toggle="modal" data class="btn btn-sm btn-danger shadow-none" data-target="#rock1">
                                             <i class="fas fa-trash fa-xs"></i>
                                        </button>
-                                       <a href="http://localhost/SimpleParkingMgSystem_CI/admin/edit/edit_category/1" onclick="window.open('http://localhost/SimpleParkingMgSystem_CI/admin/edit/edit_category/1', '_blank', 'width=800,height=600,scrollbars=yes,menubar=no,status=yes,resizable=yes,screenx=0,screeny=0'); return false;" class="btn btn-info btn-sm shadow-none"><i class="fas fa-edit fa-xs"></i></a>                                    </td>
-                                </tr>
-                                                                <tr>
-                                    <td>3</td>
-                                    <td>6</td>
-                                    <td>Motorcycle</td>
-                                    <td>26</td>
-                                    <td>2</td>
-                                    <td>                                        <span class="badge badge-success">เปิดใช้งานแล้ว</span>
-                                        
-                                        
-                                        </small></td>
-                                    <td>
-                                        <div class="modal fade" id="rock3">
-                                           <div class="modal-dialog">
-                                               <div class="modal-content">
-                                                   <div class="modal-body">
-                                                       <i class="far fa-frown"></i>&nbsp; Do you really want to delete this category?
-                                                   </div>
-                                                   <div class="modal-footer">
-                                                       <a href="http://localhost/SimpleParkingMgSystem_CI/admin/delete/category/3" class="btn btn-sm btn-danger shadow-none">&nbsp; Yes &nbsp;</a>
-                                                       <a href="" class="btn btn-dark btn-sm shadow-none">&nbsp; No &nbsp;</a>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       
-                                                                              <a href="http://localhost/SimpleParkingMgSystem_CI/admin/status/status_deactivate/3" class="btn btn-sm bg-danger text-white shadow-none"><small>Deactivate</small></a>
-                                                                              <button type="button" data-toggle="modal" data class="btn btn-sm btn-danger shadow-none" data-target="#rock3">
-                                            <i class="fas fa-trash fa-xs"></i>
-                                       </button>
-                                       <a href="http://localhost/SimpleParkingMgSystem_CI/admin/edit/edit_category/3" onclick="window.open('http://localhost/SimpleParkingMgSystem_CI/admin/edit/edit_category/3', '_blank', 'width=800,height=600,scrollbars=yes,menubar=no,status=yes,resizable=yes,screenx=0,screeny=0'); return false;" class="btn btn-info btn-sm shadow-none"><i class="fas fa-edit fa-xs"></i></a>                                    </td>
-                                </tr>
-                                                                <tr>
-                                    <td>4</td>
-                                    <td>2</td>
-                                    <td>Mini Van</td>
-                                    <td>8</td>
-                                    <td>5</td>
-                                    <td>                                        <span class="badge badge-success">เปิดใช้งานแล้ว</span>
-                                        
-                                        
-                                        </small></td>
-                                    <td>
-                                        <div class="modal fade" id="rock4">
-                                           <div class="modal-dialog">
-                                               <div class="modal-content">
-                                                   <div class="modal-body">
-                                                       <i class="far fa-frown"></i>&nbsp; Do you really want to delete this category?
-                                                   </div>
-                                                   <div class="modal-footer">
-                                                       <a href="http://localhost/SimpleParkingMgSystem_CI/admin/delete/category/4" class="btn btn-sm btn-danger shadow-none">&nbsp; Yes &nbsp;</a>
-                                                       <a href="" class="btn btn-dark btn-sm shadow-none">&nbsp; No &nbsp;</a>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       
-                                                                              <a href="http://localhost/SimpleParkingMgSystem_CI/admin/status/status_deactivate/4" class="btn btn-sm bg-danger text-white shadow-none"><small>Deactivate</small></a>
-                                                                              <button type="button" data-toggle="modal" data class="btn btn-sm btn-danger shadow-none" data-target="#rock4">
-                                            <i class="fas fa-trash fa-xs"></i>
-                                       </button>
-                                       <a href="http://localhost/SimpleParkingMgSystem_CI/admin/edit/edit_category/4" onclick="window.open('http://localhost/SimpleParkingMgSystem_CI/admin/edit/edit_category/4', '_blank', 'width=800,height=600,scrollbars=yes,menubar=no,status=yes,resizable=yes,screenx=0,screeny=0'); return false;" class="btn btn-info btn-sm shadow-none"><i class="fas fa-edit fa-xs"></i></a>                                    </td>
-                                </tr>
-                                                                <tr>
-                                    <td>5</td>
-                                    <td>7</td>
-                                    <td>Pickup Van</td>
-                                    <td>11</td>
-                                    <td>5</td>
-                                    <td>                                        <span class="badge badge-success">เปิดใช้งานแล้ว</span>
-                                        
-                                        
-                                        </small></td>
-                                    <td>
-                                        <div class="modal fade" id="rock5">
-                                           <div class="modal-dialog">
-                                               <div class="modal-content">
-                                                   <div class="modal-body">
-                                                       <i class="far fa-frown"></i>&nbsp; Do you really want to delete this category?
-                                                   </div>
-                                                   <div class="modal-footer">
-                                                       <a href="http://localhost/SimpleParkingMgSystem_CI/admin/delete/category/5" class="btn btn-sm btn-danger shadow-none">&nbsp; Yes &nbsp;</a>
-                                                       <a href="" class="btn btn-dark btn-sm shadow-none">&nbsp; No &nbsp;</a>
-                                                   </div>
-                                               </div>
-                                           </div>
-                                       </div>
-                                       
-                                                                              <a href="http://localhost/SimpleParkingMgSystem_CI/admin/status/status_deactivate/5" class="btn btn-sm bg-danger text-white shadow-none"><small>Deactivate</small></a>
-                                                                              <button type="button" data-toggle="modal" data class="btn btn-sm btn-danger shadow-none" data-target="#rock5">
-                                            <i class="fas fa-trash fa-xs"></i>
-                                       </button>
-                                       <a href="http://localhost/SimpleParkingMgSystem_CI/admin/edit/edit_category/5" onclick="window.open('http://localhost/SimpleParkingMgSystem_CI/admin/edit/edit_category/5', '_blank', 'width=800,height=600,scrollbars=yes,menubar=no,status=yes,resizable=yes,screenx=0,screeny=0'); return false;" class="btn btn-info btn-sm shadow-none"><i class="fas fa-edit fa-xs"></i></a>                                    </td>
-                                </tr>
+                                       <a href="../edit/category.php" onclick="window.open('../edit/category.php', '_blank', 'width=800,height=600,scrollbars=yes,menubar=no,status=yes,resizable=yes,screenx=0,screeny=0'); return false;" class="btn btn-info btn-sm shadow-none"><i class="fas fa-edit fa-xs"></i></a>                                    </td>
+
                                                                 
                                                             </table>
                         </div>
@@ -219,6 +124,7 @@ include('../includes/navbar.php');
         </div>
     </div>
 </div>
+</body>
 
 </script>
 
