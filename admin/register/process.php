@@ -2,6 +2,7 @@
 
 include('../database.php');
 
+
 $action = $_GET['action'];
 if ($action == "CREATE") {
    $stmt = $db_con->prepare("INSERT INTO member (username, mem_lname, mem_number, mem_age, reg_tel, reg_number, password ) VALUES (:username, :mem_lname, :mem_number, :mem_age, :reg_tel, :reg_number, :password )");
@@ -16,7 +17,7 @@ if ($action == "CREATE") {
    $result = $stmt->execute();
    if ($result) {
       echo "<script>alert(`บันทึกข้อมูลได้สำเร็จ`)</script>";
-      header("Location: ../login/indix.php");
+      header("Location: ../login/index.php");
    } else {
       echo "<script>alert(`เกิดข้อผิดพลาดระหว่างบันทึกข้อมูล`)</script>";
    }

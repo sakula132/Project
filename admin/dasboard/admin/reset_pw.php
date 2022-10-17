@@ -1,7 +1,7 @@
 
 <?php 
-include('../includes/header.php');
-include('../includes/navbar.php');
+include('../admin/header.php');
+include('../admin/navbar.php');
 
 ?>
 
@@ -43,7 +43,7 @@ include('../includes/navbar.php');
 
 
 <?php
-include('../includes/scripts.php');
-include('../includes/footer.php');
+include('../admin/scripts.php');
+include('../admin/footer.php');
 
 ?>

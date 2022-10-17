@@ -23,7 +23,7 @@
           <img src="../img/fawsee.jpg" alt="">
           <ul class="profile-link">
             <li><a href="#"><i class='bx bx-user-circle icon' ></i>Profile</a></li>
-            <li><a href="../employee/reset_pw.php"><i class='bx bxs-cog' ></i></i>Settings</a></li>
+            <li><a href="../admin/reset_pw.php"><i class='bx bxs-cog' ></i></i>Settings</a></li>
             <li><a href="../../li/logout.php"><i class='bx bx-log-out' ></i></i>Logout</a></li>
           </ul>
         </div>

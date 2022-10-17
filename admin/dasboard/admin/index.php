@@ -1,6 +1,6 @@
 <?php 
-include('../employee/header.php');
-include('../employee/navbar.php');
+include('../admin/header.php');
+include('../admin/navbar.php');
 
 
 ?>
@@ -65,7 +65,7 @@ include('../employee/navbar.php');
       <!-- MAIN -->
 
 <?php
-include('../employee/scripts.php');
-include('../employee/footer.php');
+include('../admin/scripts.php');
+include('../admin/footer.php');
 
 ?>

@@ -8,25 +8,7 @@ include('../includes/navbar.php');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 
-    <style>
-/* .card{    
-max-width: 100px;
-padding: 10px 10px 10px 10px;
-transform: translateX(-15%);
-transition: all .3s ease;
-} */
-.card{    
-padding: 10px 10px 10px 10px;
-}
-.form-control-sm {
-	height: calc(1.8125rem + 2px);
-	padding: 0rem 0.5rem;
-	font-size: 0.875rem;
-	line-height: 1.5;
-	border-radius: 0.2rem;
-}
 
-</style>
 <div class="col-8 offset-3 mt-5 mr-5">
             <div class="row">
                 <div class="col-8 ml-5">

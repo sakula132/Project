@@ -1,8 +1,24 @@
 <?php 
-include('../includes/header.php');
-include('../includes/navbar.php');
+include('../member/header.php');
+include('../member/navbar.php');
 
 ?>
+<style>
+/* .card{    
+max-width: 100px;
+padding: 10px 10px 10px 10px;
+transform: translateX(-15%);
+transition: all .3s ease;
+} */
+.card{    
+padding: 10px 10px 10px 10px;
+}
+.form-group {
+  margin-bottom: 0rem;
+}
+
+</style>
+
     <link rel="stylesheet" href="../css/main.css">
     <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -148,7 +164,7 @@ function myFunction() {
 </script>
 
 <?php
-include('../includes/scripts.php');
-include('../includes/footer.php');
+include('../member/scripts.php');
+include('../member/footer.php');
 
 ?>

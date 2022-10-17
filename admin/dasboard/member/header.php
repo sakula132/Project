@@ -19,32 +19,19 @@
 
     <!-- SIDEBAR -->
     <section id="sidebar">
-        <a href="../employee/home.php" class="brand"></i>Car Park Songkhla</a>
+        <a href="#" class="brand"></i>Car Park Songkhla</a>
         <ul class="side-menu">
-            <li><a href="../employee/index.php" class="active"><i class="bx bxs-dashboard icon"></i> Dashboard</a></li>
+            <li><a href="#" class="active"><i class="bx bxs-dashboard icon"></i> Dashboard</a></li>
             <li class="divider" data-text="main">Main</li>
             <li>
-                <a href="#"><i class="bx bxs-inbox icon"></i> ข้อมูล
+                <a href="#"><i class="bx bxs-inbox icon"></i> จองที่จอดรถ
                   <i class='bx bx-chevron-right icon-right'></i></a>
                     <ul class="side-dropdown">
-                        <li><a href="#">พนักงาน</a></li>
-                        <li><a href="../member/as.php">ลูกค้า</a></li>
+                        <li><a href="#">เลือกช่วงเวลาการจอง</a></li>
+                        <li><a href="#">เพิ่มระยะเวลาการจอง</a></li>
             </ul>
         </li>
-        <li><a href="../employee/category.php"><i class='bx bxs-category icon'></i> หมวดหมู่รถ</a></li>
-        <li><a href="../employee/add_vehicle.php"><i class='bx bxs-car icon'></i> ที่จอดรถ</a></li>
-        <li class="divider" data-text="table and froms">Table and froms</li>
-        <li><a href="#"><i class='bx bx-table icon'></i></i> Tables</a></li>
-        <li>
-          <a href="#"><i class='bx bxs-notepad icon'></i> Froms
-            <i class='bx bx-chevron-right icon-right'></i></a> 
-              <ul class="side-dropdown">
-                  <li><a href="#">Alert</a></li>
-                  <li><a href="#">Badges</a></li>
-                  <li><a href="#">Breadcrumbs</a></li>
-                  <li><a href="#">Radio</a></li>
-              </ul>
-        </li>
+        <li><a href="#"><i class='bx bxs-car icon'></i> ตรวจสอบที่จอดรถ</a></li>
       </ul>
       <!-- <div class="ads">
         <div class="wrapper">

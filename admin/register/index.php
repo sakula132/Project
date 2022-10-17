@@ -23,12 +23,113 @@
    <link rel="stylesheet" type="text/css" href="../assets/plugins/vali-admin/css/main.css">
    <!-- Font-icon css-->
    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-
-
    
+<style>
+.login-content .register-box {
+  position: relative;
+  min-width: 350px;
+  min-height: 700px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
+  -webkit-perspective: 800px;
+          perspective: 800px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.login-content .register-box .login-head {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 0px solid #ddd;
+  text-align: left;
+}
+
+.login-content .register-box label {
+  color: #666;
+  font-weight: 700;
+}
+
+.login-content .register-box .utility {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-content .register-box .btn-container {
+  margin-bottom: 0;
+}
+
+.login-content .register-box .regis-form, .login-content .register-box .forget-form {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.login-content .register-box .forget-form {
+  opacity: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.login-content .register-box.flipped {
+  min-height: 300px;
+}
+
+.login-content .register-box.flipped .regis-form {
+  opacity: 0;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.login-content .register-box.flipped .forget-form {
+  opacity: 1;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+@media (max-width: 351px) {
+  .login-content .register-box {
+    min-width: 100%;
+  }
+  .login-content .register-box .regis-form, .login-content .register-box .forget-form {
+    width: 100%;
+  }
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+h3, .h3 {
+  font-size: 3.53125rem;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+</style>
    <section class="material-half-bg">
       <div class="cover"></div>
    </section>
@@ -39,7 +140,7 @@
       <div class="register-box">
     
          <form class="regis-form" method="POST" action="process.php?action=CREATE">
-            <h3" class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>เข้าสู่ระบบ</h3>
+            <!-- <h3" class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>สมัครสมาชิก</h3> -->
             <div class="form-group">
                <label class="control-label">ชื่อ</label>
                <input class="form-control" type="text" name="username" placeholder="ระบุชื่อผู้ใช้งาน" autofocus>

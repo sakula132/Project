@@ -20,7 +20,7 @@
         </a> -->
         <span class="divider"></span>
         <div class="profile">
-          <img src="../img/fawsee.jpg" alt="">
+          <img src="../img/mild.jpg" alt="">
           <ul class="profile-link">
             <li><a href="#"><i class='bx bx-user-circle icon' ></i>Profile</a></li>
             <li><a href="../employee/reset_pw.php"><i class='bx bxs-cog' ></i></i>Settings</a></li>

@@ -1,0 +1,16 @@
+<?php 
+include('../member/header.php');
+include('../member/navbar.php');
+
+?>
+
+
+
+
+
+
+<?php
+include('../member/scripts.php');
+include('../member/footer.php');
+
+?>

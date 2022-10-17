@@ -8,19 +8,7 @@ include('../includes/navbar.php');
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 
-    <style>
-/* .card{    
-max-width: 100px;
-padding: 10px 10px 10px 10px;
-transform: translateX(-15%);
-transition: all .3s ease;
-} */
-.card{    
-padding: 10px 10px 10px 10px;
-}
 
-
-</style>
 <div class="col-8 offset-3 mt-5 mr-5">
             <div class="row">
                 <div class="col-8 ml-5">
@@ -102,7 +90,7 @@ padding: 10px 10px 10px 10px;
                                                        <i class="bx bx-error"></i>&nbsp; ต้องการลบหมวดหมู่นี้?
                                                    </div>
                                                    <div class="modal-footer">
-                                                       <a href="http://localhost/SimpleParkingMgSystem_CI/admin/delete/category/1" class="btn btn-sm btn-danger shadow-none">&nbsp; Yes &nbsp;</a>
+                                                       <a href="#http://localhost/SimpleParkingMgSystem_CI/admin/delete/category/1" class="btn btn-sm btn-danger shadow-none">&nbsp; Yes &nbsp;</a>
                                                        <a href="" class="btn btn-dark btn-sm shadow-none">&nbsp; No &nbsp;</a>
                                                    </div>
                                                </div>

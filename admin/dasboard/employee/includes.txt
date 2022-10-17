@@ -1,0 +1,16 @@
+<?php 
+include('../employee/header.php');
+include('../employee/navbar.php');
+
+
+?>
+
+
+
+
+
+<?php
+include('../employee/scripts.php');
+include('../employee/footer.php');
+
+?>
