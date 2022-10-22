@@ -30,7 +30,7 @@
 .login-content .register-box {
   position: relative;
   min-width: 350px;
-  min-height: 700px;
+  min-height: 770px;
   background-color: #fff;
   -webkit-box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 29px 147.5px 102.5px rgba(0, 0, 0, 0.05), 0px 29px 95px 0px rgba(0, 0, 0, 0.16);
@@ -142,8 +142,12 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
          <form class="regis-form" method="POST" action="process.php?action=CREATE">
             <!-- <h3" class="login-head"><i class="fa fa-lg fa-fw fa-user"></i>สมัครสมาชิก</h3> -->
             <div class="form-group">
-               <label class="control-label">ชื่อ</label>
+               <label class="control-label">ชื่อผู้ใช้งาน</label>
                <input class="form-control" type="text" name="username" placeholder="ระบุชื่อผู้ใช้งาน" autofocus>
+            </div>
+            <div class="form-group">
+               <label class="control-label">ชื่อ</label>
+               <input class="form-control" type="text" name="mem_name" placeholder="ระบุชื่อผู้ใช้งาน" autofocus>
             </div>
             <div class="form-group">
                <label class="control-label">นามสกุล</label>

@@ -3,6 +3,7 @@
 include('../admin/header.php');
 include('../admin/navbar.php');
 
+
 ?>
 
     <link rel="stylesheet" href="../css/main.css">
@@ -19,7 +20,7 @@ include('../admin/navbar.php');
                             <form action="#" method="post" class="mt-4">
                                 <div class="form-group">
                                     <label class=" m-0 p-0 text-muted">Current Password</label>
-                                    <input type="password" name="current_password" class="form-control form-control-sm shadow-none" placeholder="***รหัสผ่านเดิม***" autofocus>
+                                    <input type="password" name="current_password" id="current_password"class="form-control form-control-sm shadow-none" placeholder="***รหัสผ่านเดิม***" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <label class=" m-0 p-0 text-muted">New Password</label>
@@ -40,7 +41,6 @@ include('../admin/navbar.php');
         </div>
     </div>
 </div>
-
 
 <?php
 include('../admin/scripts.php');

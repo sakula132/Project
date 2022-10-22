@@ -83,7 +83,7 @@ li{
     z-index: 100;
     background: var(--light);
     transition: all .3s ease;
-    padding: 0 6px;
+    padding: 0 16px;
 }
 
 #sidebar.hide .brand{

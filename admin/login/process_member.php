@@ -4,7 +4,7 @@ include('../database.php');
 include('../dasboard/member/footer.php');
 
 if (!empty($_POST)) {
-   $stmt = $db_con->prepare("SELECT * FROM member WHERE username = :username AND password = :password ");
+   $stmt = $conn->prepare("SELECT * FROM member WHERE username = :username AND password = :password ");
    $stmt->bindParam("username", $_POST['username']);
    $stmt->bindParam("password", $_POST['password']);
    $stmt->execute();
@@ -52,3 +52,6 @@ if (!empty($_POST)) {
      
    }
 }
+
+
+?>

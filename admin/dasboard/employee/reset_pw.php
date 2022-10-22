@@ -1,7 +1,9 @@
 
 <?php 
-include('../includes/header.php');
-include('../includes/navbar.php');
+include('../employee/header.php');
+include('../employee/navbar.php');
+
+
 
 ?>
 
@@ -19,11 +21,11 @@ include('../includes/navbar.php');
                             <form action="#" method="post" class="mt-4">
                                 <div class="form-group">
                                     <label class=" m-0 p-0 text-muted">Current Password</label>
-                                    <input type="password" name="current_password" class="form-control form-control-sm shadow-none" placeholder="***รหัสผ่านเดิม***" autofocus>
+                                    <input type="password" name="current_password" id="current_password" class="form-control form-control-sm shadow-none" placeholder="***รหัสผ่านเดิม***" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <label class=" m-0 p-0 text-muted">New Password</label>
-                                    <input type="password" name="new_password" class="form-control form-control-sm shadow-none" placeholder="***รหัสผ่านใหม่***" >
+                                    <input type="password" name="new_password" id="current_password" class="form-control form-control-sm shadow-none" placeholder="***รหัสผ่านใหม่***" >
                                 </div>
                                 <div class="form-group">
                                     <label class=" m-0 p-0 text-muted">Re enter Password</label>
@@ -43,7 +45,7 @@ include('../includes/navbar.php');
 
 
 <?php
-include('../includes/scripts.php');
-include('../includes/footer.php');
+include('../employee/scripts.php');
+include('../employee/footer.php');
 
 ?>

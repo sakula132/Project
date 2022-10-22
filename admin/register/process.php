@@ -5,7 +5,7 @@ include('../database.php');
 
 $action = $_GET['action'];
 if ($action == "CREATE") {
-   $stmt = $db_con->prepare("INSERT INTO member (username, mem_lname, mem_number, mem_age, reg_tel, reg_number, password ) VALUES (:username, :mem_lname, :mem_number, :mem_age, :reg_tel, :reg_number, :password )");
+   $stmt = $conn->prepare("INSERT INTO member (username, mem_lname, mem_number, mem_age, reg_tel, reg_number, password ) VALUES (:username, :mem_lname, :mem_number, :mem_age, :reg_tel, :reg_number, :password )");
    $stmt->bindParam("username", $_POST['username'], PDO::PARAM_STR);
    $stmt->bindParam("mem_lname", $_POST['mem_lname'], PDO::PARAM_STR);
    $stmt->bindParam("mem_number", $_POST['mem_number'], PDO::PARAM_STR);
@@ -23,7 +23,7 @@ if ($action == "CREATE") {
    }
 }
 
-
+mysqli_set_charset($action,"utf8");
 
 ?>
 

@@ -8,15 +8,15 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css"/>
+    <!-- <link rel="stylesheet" href="../css/style.css"/> -->
+    <link rel="stylesheet" href="../css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Soi 2 Car Park Songkhla</title>
   </head>
 
-  
   <body>
-
+    
     <!-- SIDEBAR -->
     <section id="sidebar">
         <a href="../admin/index.php" class="brand"></i>Car Park Songkhla</a>
@@ -27,10 +27,10 @@
                 <a href="#"><i class="bx bxs-inbox icon"></i> จัดการข้อมูล
                   <i class='bx bx-chevron-right icon-right'></i></a>
                     <ul class="side-dropdown">
-                        <li><a href="#">ผู้ดูแลระบบ</a></li>
-                        <li><a href="#">พนักงาน</a></li>
-                        <li><a href="#">สมาชิก</a></li>
-                        <li><a href="#">อัตราราคา</a></li>
+                        <li><a href="admin.php">ผู้ดูแลระบบ</a></li>
+                        <li><a href="emp.php">พนักงาน</a></li>
+                        <li><a href="cus.php">สมาชิก</a></li>
+                        <li><a href="pr.php">อัตราราคา</a></li>
             </ul>
         </li>
         <li>

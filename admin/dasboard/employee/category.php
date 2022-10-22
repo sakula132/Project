@@ -78,10 +78,7 @@ include('../includes/navbar.php');
                                     <td>Car</td>
                                     <td>80</td>
                                     <td>100</td>
-                                    <td>                                        <span class="badge badge-success">เปิดใช้งานแล้ว</span>
-                                        
-                                        
-                                        </small></td>
+
                                     <td>
                                         <div class="modal fade" id="rock1">
                                            <div class="modal-dialog">
@@ -101,7 +98,8 @@ include('../includes/navbar.php');
                                                                               <button type="button" data-toggle="modal" data class="btn btn-sm btn-danger shadow-none" data-target="#rock1">
                                             <i class="fas fa-trash fa-xs"></i>
                                        </button>
-                                       <a href="../edit/category.php" onclick="window.open('../edit/category.php', '_blank', 'width=800,height=600,scrollbars=yes,menubar=no,status=yes,resizable=yes,screenx=0,screeny=0'); return false;" class="btn btn-info btn-sm shadow-none"><i class="fas fa-edit fa-xs"></i></a>                                    </td>
+                                       <a href="../edit/category.php" onclick="window.open('../edit/category.php', '_blank', 'width=800,height=600,scrollbars=yes,menubar=no,status=yes,resizable=yes,screenx=0,screeny=0'); return false;" class="btn btn-info btn-sm shadow-none"><i class="fas fa-edit fa-xs"></i></a>                                    
+                                    </td>
 
                                                                 
                                                             </table>

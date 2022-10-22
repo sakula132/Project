@@ -11,7 +11,30 @@ padding: 10px 10px 10px 10px;
 .form-group {
   margin-bottom: 0rem;
 }
+.from-group {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    height: 64px;
+    font-weight: 700;
+    color: var(--red);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: all .3s ease;
+    padding: 0 16px;
+}
 
+.from-group .welcome-item{
+  font-size: 25px;
+  color: var(--green);
+}
+
+#USER{
+        font-size: 30px;
+        color: var(--red);
+    }
 </style>
 
 <link
