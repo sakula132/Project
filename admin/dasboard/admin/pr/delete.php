@@ -18,7 +18,7 @@
                 timer: 1200
                 }).then((result) => {
                   if(result){
-                     window.location.href = '../cus.php';
+                     window.location.href = '../pr.php';
                   }
                })";
             echo "</script>";

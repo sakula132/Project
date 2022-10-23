@@ -16,37 +16,34 @@
             }
         }
 
-        public function insert($mem_number, $username, $mem_lname, $mem_age, $reg_tel, $password) {
-            $result = mysqli_query($this->dbcon, "INSERT INTO member (mem_number, username, mem_lname, mem_age, reg_tel, password) VALUES('$mem_number', '$username', '$mem_lname', '$mem_age', '$reg_tel', '$password')");
+        public function insert($price_number, $unit, $price) {
+            $result = mysqli_query($this->dbcon, "INSERT INTO price (price_number, unit, price) VALUES('$price_number', '$unit', '$price')");
             return $result;
         }
 
         public function fetchdata() {
-            $result = mysqli_query($this->dbcon, "SELECT * FROM member ");
+            $result = mysqli_query($this->dbcon, "SELECT * FROM price ");
             return $result;
         }
 
         public function fetchonerecord($userid) {
-            $result = mysqli_query($this->dbcon, "SELECT * FROM member  WHERE mem_id = '$userid'");
+            $result = mysqli_query($this->dbcon, "SELECT * FROM price  WHERE price_id = '$userid'");
             return $result;
         }
 
-        public function update($mem_number, $username, $mem_lname, $mem_age, $reg_tel, $password, $userid) {
-            $result = mysqli_query($this->dbcon, "UPDATE member  SET
-                mem_number = '$mem_number',
-                username = '$username',
-                mem_lname = '$mem_lname',
-                mem_age = '$mem_age',
-                reg_tel = '$reg_tel',
-                password = '$password'
+        public function update($price_number, $unit, $price, $userid) {
+            $result = mysqli_query($this->dbcon, "UPDATE price  SET
+                price_number = '$price_number',
+                unit = '$unit',
+                price = '$price'
 
-                WHERE mem_id = '$userid'
+                WHERE price_id = '$userid'
             ");
             return $result;
         }
 
         public function delete($userid) {
-            $deleterecord = mysqli_query($this->dbcon, "DELETE FROM member WHERE mem_id = '$userid'");
+            $deleterecord = mysqli_query($this->dbcon, "DELETE FROM price WHERE price_id = '$userid'");
             return $deleterecord;
         }
 

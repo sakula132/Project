@@ -6,14 +6,11 @@
     $insertdata = new DB_con();
 
     if (isset($_POST['insert'])) {
-        $mem_number = $_POST['mem_number'];
-        $username = $_POST['username'];
-        $mem_lname = $_POST['mem_lname'];
-        $mem_age = $_POST['mem_age'];
-        $reg_tel = $_POST['reg_tel'];
-        $password = $_POST['password'];
+        $price_number = $_POST['price_number'];
+        $unit = $_POST['unit'];
+        $price = $_POST['price'];
         
-        $sql = $insertdata->insert($mem_number, $username, $mem_lname, $mem_age, $reg_tel, $password);
+        $sql = $insertdata->insert($price_number, $unit, $price);
 
 
         if ($sql) {

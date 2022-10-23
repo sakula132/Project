@@ -35,11 +35,11 @@ td {
 
 
                     <div class="container">
-                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#adda">Add New</button>
+                    <button type="button" class="btn btn-dark mb-2" data-toggle="modal" data-target="#adda">กดเพื่อเพิ่ม</button>
 
 
                         <div class="card-body">
-                            <h2 class="h6 text-muted"><i class="fas fa-user-lock"></i>&nbsp; รายชื่อสมาชิก</h2>
+                            <h2 class="h6 text-muted"><i class="fas fa-user-lock"></i>&nbsp; อัตราราคา</h2>
                             <table class="table mt-4 table-borderless">
                                 
                             
@@ -61,17 +61,17 @@ td {
 
                                 ?>
                                     <tr>
-                                    <td><?php echo $row['mem_id']; ?></td>
-                                    <td><?php echo $row['mem_number'];?></td>
-                                    <td><?php echo $row['username'];?></td>
-                                    <td><?php echo $row['mem_lname'];?></td>
+                                    <td><?php echo $row['price_id']; ?></td>
+                                    <td><?php echo $row['price_number'];?></td>
+                                    <td><?php echo $row['unit'];?></td>
+                                    <td><?php echo $row['price'];?></td>
 
                                     <td>
                                         
                                     <button type="button" class="btn btn-info editbtn" data-toggle="modal">
                                     แก้ไข
                                     </button>
-                                    <a href="pr/delete.php?del=<?php echo $row['mem_id']; ?>" class="btn btn-danger">ลบ</a>
+                                    <a href="pr/delete.php?del=<?php echo $row['price_id']; ?>" class="btn btn-danger">ลบ</a>
 
 
                                     </td>
@@ -92,6 +92,158 @@ td {
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+<!-- ###############DELETE###############DELETE###############DELETE###############DELETE###############DELETE###############DELETE############### -->
+
+<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> ลบข้อมูลสมาชิก </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <form action="pr/delete.php" method="POST">
+
+                    <div class="modal-body">
+
+                        <input type="hidden" name="del" id="del">
+
+                        <h4> คุณต้องการที่จะลบข้อมูล ??</h4>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> ไม่ </button>
+                        <button type="submit" name="del" class="btn btn-primary"> ใช่ !! ฉันต้องการลบ. </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ###############UPDATE###############UPDATE###############UPDATE###############UPDATE############### -->
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="editmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> แก้ไขอัตราราคา </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <form action="pr/update.php" method="POST">
+
+                    <div class="modal-body">
+
+                        <input type="hidden" name="price_id" id="price_id">
+
+            <div class="form-group">
+               <label  class="control-label">ระยะเวลา</label>
+               <input class="form-control" type="number" name="price_number"  id="price_number" placeholder="ระบุระยะเวลา" autofocus>
+            </div>
+            <div class="form-group">
+               <label class="control-label">หน่วย</label>
+               <input class="form-control" type="text" name="unit" id="unit" idusername placeholder="ระบุหน่วย">
+            </div>
+            <div class="form-group">
+               <label  class="control-label">ราคา</label>
+               <input class="form-control" type="text" name="price" id="price" placeholder="ระบุราคา">
+            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" name="update" class="btn btn-info">Update Data</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+
+
+
+
+
+
+    <!-- ###############INSERT###############INSERT###############INSERT###############INSERT###############INSERT###############INSERT############### -->
+<div class="modal fade" id="adda" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">เพิ่มอัตราราคา</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+      <form action="cus/insert.php" method="post" class="mt-4">
+
+        <div class="modal-body">
+
+            <div class="form-group">
+               <label for="price_number" class="control-label">ระยะเวลา</label>
+               <input class="form-control" type="number" name="price_number" placeholder="ระบุระยะเวลา" autofocus>
+            </div>
+            <div class="form-group">
+               <label for="unit" class="control-label">หน่วย</label>
+               <input class="form-control" type="text" name="unit" placeholder="ระบุหน่วย">
+            </div>
+            <div class="form-group">
+               <label for="price" class="control-label">ราคา</label>
+               <input class="form-control" type="text" name="price" placeholder="ระบุราคา">
+            </div>
+
+            <div class="modal-footer">
+            <div class="form-group">
+                
+            <button type="submit" name="insert" class="btn btn-info btn-lg text-white shadow-none" >ยืนยัน</button>
+            <button type="button" name="cancel" data-dismiss="modal" aria-label="Close" class="btn btn-danger btn-lg text-white shadow-none ">ยกเลิก</button>
+            </div>
+            
+
+                                
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 
 
 
