@@ -1,6 +1,6 @@
 <?php 
-include('../admin/header.php');
-include('../admin/navbar.php');
+include('header.php');
+include('navbar.php');
 
 ?>
     <link rel="stylesheet" href="../css/main.css">
@@ -43,7 +43,7 @@ table {
                                 <tr>
                                     <th><b>รหัสเจ้าหน้าที่</b></th>
                                     <th><b>เลขบัตรประชาชน</b></th>
-                                    <th><b>ไอดีผู้ใช้งาน</b></th>
+                                    <th><b>ชื่อผู้ใช้งาน</b></th>
                                     <th><b>นามสกุล</b></th>
                                     <th><b>อายุ</b></th>
                                     <th><b>เบอร์โทรศัพท์</b></th>
@@ -159,7 +159,7 @@ table {
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> Edit Student Data </h5>
+                    <h5 class="modal-title" id="exampleModalLabel"> แก้ไขรายชื่อผู้ดูแลระบบ </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -281,7 +281,7 @@ table {
 
 
 <?php
-include('../admin/scripts.php');
+include('scripts.php');
 include('footer.php');
 include('admin/delete.php');
 include('admin/update.php');

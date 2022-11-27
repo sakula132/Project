@@ -31,15 +31,14 @@
             return $result;
         }
 
-        public function update($employee_card, $username, $employee_lname, $employee_age, $employee_tel, $type, $password, $userid) {
+        public function update($employee_card, $username, $employee_lname, $employee_age, $employee_tel, $type, $userid) {
             $result = mysqli_query($this->dbcon, "UPDATE employee  SET
                 employee_card = '$employee_card',
                 username = '$username',
                 employee_lname = '$employee_lname',
                 employee_age = '$employee_age',
                 employee_tel = '$employee_tel',
-                type = '$type',
-                password = '$password'
+                type = '$type'
                 
                 WHERE employee_id = '$userid'
             ");

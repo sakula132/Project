@@ -45,7 +45,12 @@ padding: 10px 10px 10px 10px;
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 </section>
     <!-- NAVBAR -->
-
     <script src="../js/script.js"></script>
+    <script src="../../assets/plugins/vali-admin/js/jquery-3.3.1.min.js"></script>
+    <script src="../../assets/plugins/vali-admin/js/main.js"></script>
+    <script src="../../assets/plugins/vali-admin/js/bootstrap.min.js"></script>
+    <script src="../../assets/plugins/vali-admin/js/popper.min.js"></script>
+    
+
   </body>
 </html>

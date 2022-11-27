@@ -15,9 +15,8 @@
         $employee_age = $_POST['employee_age'];
         $employee_tel = $_POST['employee_tel'];
         $type = $_POST['type'];
-        $password = $_POST['password'];
 
-        $sql = $updatedata->update($employee_card, $username, $employee_lname, $employee_age, $employee_tel, $type, $password, $userid);
+        $sql = $updatedata->update($employee_card, $username, $employee_lname, $employee_age, $employee_tel, $type, $userid);
         if ($sql) {
             echo "<script>alert('Updated Successfully!');</script>";
             echo "<script>window.location.href='../admin.php'</script>";
@@ -52,7 +51,6 @@
                 $('#employee_age').val(data[4]);
                 $('#employee_tel').val(data[5]);
                 $('#type').val(data[6]);
-                $('#password').val(data[7]);
 
             });
         });

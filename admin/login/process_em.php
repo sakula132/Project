@@ -43,7 +43,7 @@ if (!empty($_POST)) {
                timer: 1200
                }).then((result) => {
                   if(result){
-                     window.location.href = '../dasboard/admin/index.php';
+                     window.location.href = '../dasboard/admin/admin.php';
                   }
                })";
          echo "</script>";

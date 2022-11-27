@@ -14,3 +14,432 @@ include('../member/scripts.php');
 include('../member/footer.php');
 
 ?>
+
+
+
+<?php 
+
+                            include_once('select/functions.php');
+                            $cardata = new DB_con();
+                            $sql = $cardata->cardata();
+                            while($row = mysqli_fetch_array($sql)) {
+                            ?>
+                            <option value="<?= $row['type_id'];?>"><?=$row['type_name'];?></option>
+                            <?php 
+
+                            }
+                            ?>
+
+
+
+
+o<?php 
+include('header.php');
+include('navbar.php');
+
+?>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="sty.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  
+  
+  <script >
+$(document).ready(function(){
+    $('#type_name').on('change', function(){
+        var typenameID = $(this).val();
+        if(typenameID){
+            $.ajax({
+                type:'POST',
+                url:'typecar_js.php',
+                data:'type_name='+typenameID,
+                success:function(html){
+                    $('#car_number').html(html);
+                }
+            });
+        }else{
+            $('#car_number').html('option value="">เลือกประเทศก่อน</option>');
+        }
+    })
+})
+
+</script>
+
+<style>
+    
+
+table {
+	border-collapse: collapse;
+}
+.table {
+	width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-top: 2px solid #e9ecef;
+}
+
+.form-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -5px;
+	margin-left: -5px;
+}
+
+.form-row > .col,
+.form-row > [class*="col-"] {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
+
+</style>
+<div class="col-8 offset-3 mt-5 mr-5">
+            <div class="row">
+                <div class="col-12 mt-3 ml-5">
+                    <div class="card border-0 shadow-none">
+
+                        <div class="card-body">
+                            <h2 class="h6 text-muted"><i class="fas fa-user-lock"></i>&nbsp; รายชื่อผู้ดูแลระบบ</h2>
+                            <table class="table mt-4 table-borderless">
+                               
+            <td>
+                <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                    <label for="inputEmail4">ชื่อ</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="ระบุชื่อ">
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="inputPassword4">นามสกุล</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="ระบุนามสกุล">
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="inputPassword4">เบอร์โทรศัพท์</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="เบอร์โทรศัพท์">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                    <label for="type_name">ประเภท</label>
+                    <select id="type_name" name="type_name" class="form-control">
+                            <option value="" disabled selected>--โปรดเลือกประเภท--</option>
+                        <?php 
+
+                            include_once('select/functions.php');
+                            $cardata = new DB_con();
+                            $sql = $cardata->cardata();
+                            while($row = mysqli_fetch_array($sql)) {
+                            ?>
+                            <option value="<?= $row['type_id'];?>"><?=$row['type_name'];?></option>
+                            <?php 
+
+                            }
+                            ?>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="car_number">หมายเลข</label>
+                    <select id="car_number" name="car_number" class="form-control">
+                            <option value="" disabled selected>--โปรดเลือกหมายเลข--</option>
+
+                    </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="inputZip">ทะเบียนรถ</label>
+                    <input type="text" class="form-control" id="inputZip" placeholder="ทะเบียนรถ">
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="inputState">ระยะเวลา</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-5">
+                    <label class="control-label" for="date">วันที่ทำรายการ</label>
+                    <input class="form-control" id="date" name="date" placeholder="วัน/เดือน/ปี" type="text"/>
+                    </div>
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-5">
+                    <label class="control-label" for="date">วันที่จอง</label>
+                    <input class="form-control" id="date" name="date" placeholder="วัน/เดือน/ปี" type="text"/>
+                    </div>
+
+                </div>
+                <div class="form-row">
+
+                <div class="form-group col-md-5">
+                <label class="control-label" for="date">วันที่หมดอายุการจอง</label>
+                <input class="form-control" id="date" name="date" placeholder="วัน/เดือน/ปี" type="text"/>
+                </div>
+                </div>
+                
+
+                            <div class="modal-footer">
+            <div class="form-group">
+                
+            <button type="submit" name="insert" class="btn btn-info btn-lg text-white shadow-none" >ยืนยัน</button>
+            <button type="button" name="cancel" data-dismiss="modal" aria-label="Close" class="btn btn-danger btn-lg text-white shadow-none ">ยกเลิก</button>
+            </div>
+
+
+
+
+                </form>
+        
+
+
+                    </td>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<?php
+include('scripts.php');
+include('footer.php');
+include('data_time.php');
+
+include_once('select/functions.php');
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<?php 
+include('header.php');
+include('navbar.php');
+
+?>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="sty.css">
+    <!-- <link rel="stylesheet" href="../css/bootstrap.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        $("#type_name").change(function(){
+            var type_id=$(this).val();
+            $.ajax({
+                url:"action.php",
+                method:"POST",
+                data:{typeID:type_id},
+                success:function(date){
+                    $("#car_numbers").html(data);
+                }
+            });
+        });
+    });
+
+</script>
+
+<style>
+    
+
+table {
+	border-collapse: collapse;
+}
+.table {
+	width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-top: 2px solid #e9ecef;
+}
+
+.form-row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -5px;
+	margin-left: -5px;
+}
+
+.form-row > .col,
+.form-row > [class*="col-"] {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
+
+</style>
+<div class="col-8 offset-3 mt-5 mr-5">
+            <div class="row">
+                <div class="col-12 mt-3 ml-5">
+                    <div class="card border-0 shadow-none">
+
+                        <div class="card-body">
+                            <h2 class="h6 text-muted"><i class="fas fa-user-lock"></i>&nbsp; รายชื่อผู้ดูแลระบบ</h2>
+                            <table class="table mt-4 table-borderless">
+                               
+            <td>
+                <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                    <label for="inputEmail4">ชื่อ</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="ระบุชื่อ">
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="inputPassword4">นามสกุล</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="ระบุนามสกุล">
+                    </div>
+                    <div class="form-group col-md-4">
+                    <label for="inputPassword4">เบอร์โทรศัพท์</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="เบอร์โทรศัพท์">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-3">
+                    <label for="type_name">ประเภท</label>
+                    <select id="type_name" name="type_name" class="form-control">
+                            <option value="" disabled selected>--โปรดเลือกประเภท--</option>
+
+                            <?php 
+
+                            include_once('select/functions.php');
+                            $cardata = new DB_con();
+                            $sql = $cardata->cardata();
+                            while($row = mysqli_fetch_array($sql)) {
+                            ?>
+                            <option value="<?= $row['type_id'];?>"><?=$row['type_name'];?></option>
+                            <?php 
+
+                            }
+                            ?>
+
+
+
+                    </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="car_numbers">หมายเลข</label>
+                    <select id="car_numbers" name="car_numbers" class="form-control">
+                            <option value="" disabled selected>--โปรดเลือกหมายเลข--</option>
+                    </select>
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="inputZip">ทะเบียนรถ</label>
+                    <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group col-md-3">
+                    <label for="inputState">ระยะเวลา</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-5">
+                    <label class="control-label" for="date">วันที่ทำรายการ</label>
+                    <input class="form-control" id="date" name="date" placeholder="วัน/เดือน/ปี" type="text"/>
+                    </div>
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-5">
+                    <label class="control-label" for="date">วันที่จอง</label>
+                    <input class="form-control" id="date" name="date" placeholder="วัน/เดือน/ปี" type="text"/>
+                    </div>
+                </div>
+                <div class="form-row">
+
+                    <div class="form-group col-md-5">
+                    <label class="control-label" for="date">วันที่หมดอายุการจอง</label>
+                    <input class="form-control" id="date" name="date" placeholder="วัน/เดือน/ปี" type="text"/>
+                    </div>
+                </div>
+
+                            <div class="modal-footer">
+            <div class="form-group">
+                
+            <button type="submit" name="insert" class="btn btn-info btn-lg text-white shadow-none" >ยืนยัน</button>
+            <button type="button" name="cancel" data-dismiss="modal" aria-label="Close" class="btn btn-danger btn-lg text-white shadow-none ">ยกเลิก</button>
+            </div>
+
+
+
+
+                </form>
+        
+
+
+                    </td>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<?php
+include('scripts.php');
+include('footer.php');
+include('data_time.php');
+
+include_once('select/functions.php');
+?>
+
+
+
+
+
+
+

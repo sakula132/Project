@@ -27,11 +27,11 @@
                 <a href="#"><i class="bx bxs-inbox icon"></i> จองที่จอดรถ
                   <i class='bx bx-chevron-right icon-right'></i></a>
                     <ul class="side-dropdown">
-                        <li><a href="#">เลือกช่วงเวลาการจอง</a></li>
+                        <li><a href="booking_tim.php">เลือกช่วงเวลาการจอง</a></li>
                         <li><a href="#">เพิ่มระยะเวลาการจอง</a></li>
             </ul>
         </li>
-        <li><a href="#"><i class='bx bxs-car icon'></i> ตรวจสอบที่จอดรถ</a></li>
+        <li><a href="ticket_booking.php"><i class='bx bxs-car icon'></i> ตรวจสอบที่จอดรถ</a></li>
       </ul>
       <!-- <div class="ads">
         <div class="wrapper">
