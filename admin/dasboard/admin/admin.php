@@ -68,7 +68,7 @@ table {
                                     <td><?php echo $row['employee_lname'];?></td>
                                     <td><?php echo $row['employee_age'];?></td>
                                     <td><?php echo $row['employee_tel'];?></td>
-                                    <td><?php echo $type[$row['type']];?></td>
+                                    <td><?php echo $row['type'];?></td>
 
                                     <td>
                                     

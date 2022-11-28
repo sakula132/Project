@@ -1,5 +1,5 @@
 <?php 
-	require 'config.php';
+	require 'select/config.php';
 
 	if(isset($_POST['aid'])) {
 		$db = new DbConnect;
